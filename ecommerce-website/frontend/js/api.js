@@ -1,6 +1,6 @@
 // Central place for the backend base URL and small fetch helpers.
 // Change this if your backend runs somewhere other than localhost:5000.
-const API_BASE = 'http://localhost:5000/api';
+   const API_BASE = 'https://shopease-i5mu.onrender.com/api';
 
 function getToken() {
   return localStorage.getItem('token');
