@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ShopEase — Online Store</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="logo">ShopEase</a>
+    <div class="nav-links">
+      <a href="index.html">Shop</a>
+      <a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a>
+      <div id="nav-auth-area"></div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Find everything you need</h1>
+  <p>Quality products, fast shipping, easy returns.</p>
+</section>
+
+<main class="container">
+  <div class="filters">
+    <input type="text" id="search-input" placeholder="Search products..." />
+    <button class="btn btn-secondary" id="search-btn">Search</button>
+    <select id="filter-category">
+      <option value="">All Categories</option>
+    </select>
+    <select id="sort-select">
+      <option value="">Sort by</option>
+      <option value="price_asc">Price: Low to High</option>
+      <option value="price_desc">Price: High to Low</option>
+      <option value="rating">Top Rated</option>
+    </select>
+  </div>
+
+  <div id="product-grid" class="product-grid"></div>
+  <div id="pagination"></div>
+</main>
+
+<footer>&copy; 2026 ShopEase. Built as a learning project.</footer>
+
+<script src="js/api.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/products.js"></script>
+</body>
+</html>
